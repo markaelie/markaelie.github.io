@@ -1,0 +1,13 @@
+{
+"companyName": "Mark Hunanyan",
+"productName": "LUNETA",
+"dataUrl": "lunetawebgl.data.unityweb",
+"wasmCodeUrl": "lunetawebgl.wasm.code.unityweb",
+"wasmFrameworkUrl": "lunetawebgl.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#000000",
+"cacheControl": {"default": "must-revalidate"}
+}
