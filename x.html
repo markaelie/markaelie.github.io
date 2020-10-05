@@ -1,70 +1,104 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | SmoothFollow</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
-  <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
+<html lang="en">
+
+<head>
+  <title>Markaelie | Playing with 3D</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+
+      <div class="logo">
+        <a href="index.html">
+          <img width="60px" height="auto" src="images/logo.gif">
+        </a>
       </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">SmoothFollow</div>
-      </div>
-    </div>
-    <script>
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/SmoothFollow.loader.js";
-      var config = {
-        dataUrl: buildUrl + "/SmoothFollow.data.br",
-        frameworkUrl: buildUrl + "/SmoothFollow.framework.js.br",
-        codeUrl: buildUrl + "/SmoothFollow.wasm.br",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "MARKAELIE",
-        productName: "SmoothFollow",
-        productVersion: "1.0",
-      };
 
-      var container = document.querySelector("#unity-container");
-      var canvas = document.querySelector("#unity-canvas");
-      var loadingBar = document.querySelector("#unity-loading-bar");
-      var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        container.className = "unity-mobile";
-        config.devicePixelRatio = 1;
-      } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
-      }
-      loadingBar.style.display = "block";
 
-      var script = document.createElement("script");
-      script.src = loaderUrl;
-      script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
-      };
-      document.body.appendChild(script);
-    </script>
-  </body>
+  <div class="contentCenter">
+    <h1>Light of Life</h1>
+    <p>May 4, 2014</p>
+    <a href="images/mark_hunanyan_light_of_life.jpg" target="new">
+      <img src="images/mark_hunanyan_light_of_life.jpg" width="600" height="auto">
+    </a>
+
+
+<br>
+<br>
+
+    <p>Autodesk 3ds Max Social Image from 15 May 2014 to 11 Aug 2014.
+      <br>(
+      <a href="https://web.facebook.com/Autodesk3dsMax/photos/a.10150614139497851.394015.21238962850/10152220518437851/?type=1&theater"
+        target="new">Facebook</a> |
+      <a href="http://twitter.com/adsk3dsmax" target="new">Twitter</a>)</p>
+    <p>3D Artist magazine 'Light of life' by Mark Hunanyan is our Image of the Day.
+      <br>(
+      <a href="https://www.facebook.com/3DArtistMagazine/posts/808092325869907" target="new">Facebook</a> |
+      <a href="https://twitter.com/3DArtist/status/484383450498338818" target="new">Twitter</a>)</p>
+    <p>3D ARTISTS 'Light of life' by Mark Hunanyan is our Image of the Day.
+      <br>(
+      <a href="https://www.facebook.com/artists.of.world/posts/870919329604796">Facebook</a>)</p>
+
+
+
+
+
+
+<br>
+<img src="images/awards.png" width="500" height="auto">
+<br>
+<br>
+<br>
+
+
+
+    <p>
+
+      <img src="images/mark_hunanyan_light_of_life_autodesk.jpg" width="500" height="auto" />
+    </p>
+    <p>
+      <img src="images/mark_hunanyan_light_of_life_01.jpg" width="500" height="auto" />
+    </p>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1>Paradox</h1>
+    <p>July 5, 2015</p>
+    <img src="images/mark_hunanyan_paradox_01.jpg" width="600" height="auto" />
+    <p>Tools: 3ds Max 2016 / V-Ray 3 /
+      <a href="randomx.html">RandomX</a> /
+      <a href="procolor.html">ProColor</a>.
+      <br>I hope that you will be afraid.</p>
+    <p>
+      <img src="images/mark_hunanyan_paradox_02.jpg" width="500" height="auto" />
+    </p>
+    
+  </div>
+
+  <p class="copyright">
+    &copy; 2011 Markaelie
+ </p>
+
+</body>
+
 </html>
