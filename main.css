@@ -119,3 +119,10 @@ a:hover {
     margin-right: 3%;
     font-size: 14pt;
 }
+
+.disabled {
+    color: #333333 !important;
+    pointer-events: none;
+    cursor: default;
+
+}
