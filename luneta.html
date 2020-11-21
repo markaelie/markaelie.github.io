@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="luneta">
+
+<head>
+    <title>Mark Hunanyan | LUNETA : a meditation game</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+        .luneta {
+            background-image: url(images/luneta_background.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            -webkit-background-size: 100%;
+            /* Safari 3.0 */
+            -moz-background-size: 100%;
+            /* Gecko 1.9.2 (Firefox 3.6) */
+            -o-background-size: 100%;
+            /* Opera 9.5 */
+            background-size: 100%;
+        }
+    </style>
+
+
+    <link rel="shortcut icon" href="xlunetawebgl/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="lunetawebgl/TemplateData/style.css">
+    <script src="lunetawebgl/TemplateData/UnityProgress.js"></script>
+    <script src="lunetawebgl/Build/UnityLoader.js"></script>
+
+        <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "lunetawebgl/Build/lunetawebgl.json", {onProgress: UnityProgress});
+    </script>
+</head>
+
+<body>
+
+        <div class="logo">
+                <a href="index.html">
+                    <img width="60px" height="auto" src="images/logo.png">
+                </a>
+            </div>
+
+
+
+    <div class="content">
+        <div class="logoLuneta">
+            <img src="images/luneta_logo.png">
+        </div>
+
+
+
+
+    <div class="xwebgl-content" align="center">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Fullscreen</div>
+      </div>
+    </div>
+
+        <div class="icon">
+            <img src="images/luneta_icon.png">
+        </div>
+
+        <div class="appstore">
+            <a href="https://itunes.apple.com/us/app/luneta/id1209753071" target="_blank">
+                <img src="images/appstore.svg" width="150px" height="auto">
+                
+            </a>
+
+                        <a href="https://play.google.com/store/apps/details?id=com.markhunanyan.luneta" target="_blank">
+            
+                <img src="images/googleplay.png" width="150px" height="auto">
+            </a>
+        </div>
+
+
+
+        <div class="thankyou">
+
+
+            <p>
+                <em>Featured by Apple in 150+ countries.</em>
+            </p>
+            <h3>
+                <a href="https://itunes.apple.com/us/app/luneta/id1209753071" target="_blank">App Store</a>
+            </h3>
+            <br>
+            <p>
+                <em>Playing on iOS can be intense, reflexive, acting, laughing, or fearful, but it can also be relaxing, soothing, and refreshing.</em>
+            </p>
+            <h3>
+                <a href="http://www.iphon.fr/post/concours-jeu-ios-7-licences-luneta-883098" target="_blank">iPhon.fr</a>
+            </h3>
+            <br>
+            <p>
+                <em>Shortlisted by PGConnects.</em>
+            </p>
+            <h3>
+                <a href="https://www.pocketgamer.biz/" target="_blank">Pocket Gamer</a>
+            </h3>
+        </div>
+        <div class="socialColumn">
+            <a class="social" href="http://facebook.com/lunetagame" target="_blank">FACEBOOK</a>
+            <a class="social" href="http://twitter.com/lunetagame" target="_blank">TWITTER</a>
+        </div>
+    </div>
+
+    <p class="copyright">
+       &copy; 2017 Mark Hunanyan
+    </p>
+
+</body>
+
+</html>
